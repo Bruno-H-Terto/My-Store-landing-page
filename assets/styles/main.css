@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --primary-color: rgb(189, 182, 182);
+  --secondary-color: rgb(146, 139, 139);
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", serif;
+  color: var(--primary-color);
+  background-image: url('../images/studio-background-concept-abstract-empty-light-gradient-purple-studio-room-background-product.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+  color: var(--primary-color);
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  height: 5.6rem;
+  width: 100%;
+  background-color: rgba(31, 30, 30, 0.05);
+  border-radius: 1rem;
+}
+
+.navbar__items{
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+
+.navbar__items a{
+  margin: auto 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  transition: color ease-in-out 0.2s;
+}
+
+.navbar__items a:hover{
+  color: var(--secondary-color);
+}
+
+.main-content{
+  margin: 0 auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 60vh;
+}
+
+.main-content__left {
+  position: relative;
+  height: 20rem;
+  transform: translateY(-20%);
+}
+
+.main-content__left h2 {
+  font-size: 6rem;
+  text-align: right;
+  z-index: 2;
+  color: rgb(219, 224, 228);
+}
+
+.logo-container {
+  line-height: 1rem;
+  text-align: end;
+}
+
+.image-shoe {
+  width: 20rem;
+  position: absolute;
+  left: 4rem;
+  transform: translateY(-60%) translateX(50%);
+}
+
+.main-content__right {
+  color: rgb(32, 32, 32);
+  height: 18rem;
+  width: 13rem;
+  background-color: aliceblue;
+  border-radius: 2rem;
+  padding: 3rem;
+  margin: 0 auto;
+  background-image: url('../images/rb_8015.png');
+  background-position: initial;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-y: -7rem;
+}
+
+.card {
+  display: flex;
+  position: relative;
+  margin-bottom: 3rem;
+  height: 7rem;
+}
+
+.card-title {
+  text-align: center;
+  font-size: 2rem;
+  position: absolute;
+  transform: translateY(-40%);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.action {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 9px;
+  border: solid 0.3px rgb(167, 162, 162);
+}
+
+.icon__whatsapp {
+  width: 2rem;
+}
+
+.field {
+  border-radius: 0.2rem;
+  width: 80%;
+  color: rgb(66, 64, 64);
+  font-size: 1.3rem;
+  padding: 0.5rem;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.field:focus,
+.field:active {
+  outline: none;
+  box-shadow: none;
+}
+
+.field::placeholder {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.btn-send {
+  width: 100%;
+  height: 3rem;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 0.5rem;
+  background-color: rgb(125, 84, 163);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 5px;
+  transition: ease-in-out 0.2s;
+}
+
+.btn-send:hover {
+  background-color: rgb(80, 55, 105);
+}
+footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.footer-content {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  margin: auto 0;
+  margin-top: 1rem;
+}
+
+.footer-content h3 {
+  font-size: 0.9rem;
+}
+
+.footer-content img {
+  width: 2rem;
+}
+@media(max-width: 2000px){
+  .image-shoe {
+    width: 20rem;
+  }
+}
+@media(max-width: 1330px) {
+  .image-shoe {
+    width: 20rem;
+    position: absolute;
+    left: 4rem;
+    transform: translateY(-60%);
+  }
+}
+@media (max-width: 1100px) {
+  .navbar {
+    margin-bottom: 12rem;
+  }
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-content__left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .image-shoe {
+    display: none;
+  }
+
+  .footer-content {
+    margin-top: 12rem;
+  }
+}
